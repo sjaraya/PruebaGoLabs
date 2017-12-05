@@ -29,9 +29,9 @@ public class PersonInfo extends AppCompatActivity {
         personEmail = (TextView) findViewById(R.id.person_info_email);
 
 
-        personCity = (TextView) findViewById(R.id.person_info_city);
-        personSuite = (TextView) findViewById(R.id.person_info_suite);
-        personStreet = (TextView) findViewById(R.id.person_info_street);
+        personCity = (TextView) findViewById(R.id.address_city);
+        personSuite = (TextView) findViewById(R.id.address_suite);
+        personStreet = (TextView) findViewById(R.id.address_street);
 
         personCatchPhrase = (TextView) findViewById(R.id.person_info_catchphrase);
         personCName = (TextView) findViewById(R.id.person_info_company_name);

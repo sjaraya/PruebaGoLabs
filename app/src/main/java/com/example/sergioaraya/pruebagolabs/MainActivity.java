@@ -101,7 +101,7 @@ public class MainActivity extends AppCompatActivity {
                     person = new Person();
                     person.setName(temporalPerson.getString("name"));
                     person.setUsername(temporalPerson.getString("username"));
-                    person.setEmail(temporalPerson.getString("username"));
+                    person.setEmail(temporalPerson.getString("email"));
 
                     JSONObject temporalAddress = null;
                     temporalAddress = temporalPerson.getJSONObject("address");

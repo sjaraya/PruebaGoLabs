@@ -36,69 +36,38 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Address"
         android:id="@+id/title_address"
         android:textSize="20sp"
+        android:text="Address"
         android:layout_below="@id/header"/>
 
-    <LinearLayout
+
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/title_address"
-        android:id="@+id/header_address">
+        android:layout_weight="1"
+        android:text="Street"
+        android:textAlignment="center"
+        android:layout_below="@id/title_address"
+        android:id="@+id/address_street"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Street"
-            android:textAlignment="center"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Suite"
-            android:textAlignment="center"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="City"
-            android:textAlignment="center"/>
-
-    </LinearLayout>
-
-    <LinearLayout
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/header_address"
-        android:id="@+id/address_data">
+        android:layout_weight="1"
+        android:text="Suite"
+        android:textAlignment="center"
+        android:layout_below="@id/address_street"
+        android:id="@+id/address_suite"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:id="@+id/person_info_street"
-            android:textAlignment="center"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:id="@+id/person_info_suite"
-            android:textAlignment="center"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:id="@+id/person_info_city"
-            android:textAlignment="center"/>
-
-
-    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="City"
+        android:textAlignment="center"
+        android:layout_below="@+id/address_suite"
+        android:id="@+id/address_city"/>
 
     <TextView
         android:layout_width="match_parent"
@@ -106,66 +75,35 @@
         android:text="Company"
         android:id="@+id/title_company"
         android:textSize="20sp"
-        android:layout_below="@id/address_data"/>
+        android:layout_marginTop="@dimen/margin_top"
+        android:layout_below="@id/address_city"/>
 
-    <LinearLayout
+
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/title_company"
-        android:id="@+id/company_header">
+        android:layout_weight="1"
+        android:id="@+id/person_info_company_name"
+        android:textAlignment="center"
+        android:layout_below="@+id/title_company" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Name"
-            android:textAlignment="center"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Bs"
-            android:textAlignment="center"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="CatchPhrase"
-            android:textAlignment="center"/>
-
-    </LinearLayout>
-
-    <LinearLayout
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/header_address"
-        android:id="@+id/company_data">
+        android:layout_weight="1"
+        android:id="@+id/person_info_bs"
+        android:textAlignment="center"
+        android:layout_below="@id/person_info_company_name"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:id="@+id/person_info_company_name"
-            android:textAlignment="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/person_info_catchphrase"
+        android:textAlignment="center"
+        android:layout_below="@+id/person_info_bs"
+        />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:id="@+id/person_info_bs"
-            android:textAlignment="center"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:id="@+id/person_info_catchphrase"
-            android:textAlignment="center"/>
-
-
-    </LinearLayout>
 
 
 </RelativeLayout>
